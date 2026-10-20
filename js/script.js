@@ -104,7 +104,7 @@ menuItems.forEach((menuItem) => {
 /*
 地図を光らせる
 =================================================== */
-const listItems = document.querySelectorAll('.star__list button');
+const listItems = document.querySelectorAll('.list__name-list button');
 const mapGroup = document.querySelectorAll('.map__container__item__map g');
 
 listItems.forEach((item) => {
