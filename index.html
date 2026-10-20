@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCLチャイニーズ・シアター</title>
-    <meta name="discription" content="TCL チャイニーズ・シアター前の著名人のサインや手形・足型の敷石マップ">
-    <!-- <link rel="icon" type="image/svg+xml" href=""> -->
+    <meta name="discription" content="アメリカ・ロサンゼルスのハリウッドにある歴史的な映画館TCL・チャイニーズ・シアター前に敷かれている著名人の敷石のサイトです。">
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg">
 
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
 
@@ -23,10 +23,12 @@
 <body>
     <div class="frame">
         <header>
-            <h1 class="site__title">TCL Chinese Theatre</h1>
-            <h2 class="site__sub-title">Map of Handprints</h2>
+            <a href="#">
+                <h1 class="site__title">TCL Chinese Theatre</h1>
+                <h2 class="site__sub-title">Map of Handprints</h2>
+            </a>
         </header>
-        <nav class="desktop">
+        <nav class="smartphone-only">
             <button id="menu-open" class="menu-btn">
                 <img class="icon" src="images/menu.svg" alt="menu">
             </button>
@@ -37,38 +39,38 @@
                 <ul class="menu-list">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#map">Map</a></li>
-                    <li><a href="#star">Stars</a></li>
+                    <li><a href="#list">List</a></li>
                 </ul>
             </div>
         </nav>
         <div class="film film-left"></div>
         <div class="film film-right"></div>
-        <a class="to-top desktop" href="#star">
+        <a class="to-top smartphone-only" href="#list">
             <img class="icon" src="images/arrow_upward.svg" alt="up">
         </a>
     </div>
     <div id="loading-left"></div>
     <div id="loading-right"></div>
     <div id="loading">
-        <section id="home" class="home">
+        <section id="home">
             <img class="home__title" src="images/tcl_chinese_theatre.svg" alt="TCL Chinese Theatre">
             <img class="home__sub-title" src="images/map_of_handprints.svg" alt="Map of Handprints">
-            <div class="home__lead desktop">
-                <p class="home__lead__text">
-                    TCL チャイニーズ・シアター前<br>
-                    著名人のサインや手形・足型の敷石
-                </p>
-                <span class="home__lead__line"></span>
-            </div>
         </section>
     </div>
 
-    <section id="map" class="map wrapper">
+    <p class="home__lead__text">
+        アメリカ・ロサンゼルスのハリウッドにある歴史的な映画館TCL・チャイニーズ・シアター。<br>
+        その映画館前に著名人のサイン・手形・足型が記された敷石が敷かれています。<br>
+        本サイトはその敷石の地図を載せています。<br>
+        参考程度にご活用ください。
+    </p>
+
+
+    <section id="map" class="wrapper">
         <div class="sec__title-item">
             <h3 class="sec__title-item__title">MAP</h3>
             <span class="sec__title-item__line"></span>
         </div>
-
         <div class="map__container">
             <p class="map__container__text upper">映画館　入口</p>
             <div class="map__container__item">
@@ -1845,325 +1847,321 @@
             </div>
             <p class="map__container__text bottom">ハリウッド・ブールバード</p>
         </div>
-        <div class="map__text">
-            <p>注意：</p>
-            <p>この地図は実際の縮尺通りではありません。<br class="desktop">
-                参考程度にご利用ください。</p>
-        </div>
+        <p class="map__text">※この地図は実際の縮尺通りではありません。</p>
     </section>
 
-    <section id="star" class="star wrapper">
+    <section id="list" class="wrapper">
         <div class="sec__title-item">
             <h3 class="sec__title-item__title">LIST</h3>
             <span class="sec__title-item__line"></span>
         </div>
-        <ul class="star__search desktop">
-            <li class="star__search__choice"> <a href="#a">ア</a></li>
-            <li class="star__search__choice"> <a href="#ka">カ</a></li>
-            <li class="star__search__choice"> <a href="#sa">サ</a></li>
-            <li class="star__search__choice"> <a href="#ta">タ</a></li>
-            <li class="star__search__choice"> <a href="#na">ナ</a></li>
-            <li class="star__search__choice"> <a href="#ha">ハ</a></li>
-            <li class="star__search__choice"> <a href="#ma">マ</a></li>
-            <li class="star__search__choice"> <a href="#ya">ヤ</a></li>
-            <li class="star__search__choice"> <a href="#ra">ラ</a></li>
+        <ul class="list__search-list smartphone-only">
+            <li class="list__search-list__choice"> <a href="#a">ア</a></li>
+            <li class="list__search-list__choice"> <a href="#ka">カ</a></li>
+            <li class="list__search-list__choice"> <a href="#sa">サ</a></li>
+            <li class="list__search-list__choice"> <a href="#ta">タ</a></li>
+            <li class="list__search-list__choice"> <a href="#na">ナ</a></li>
+            <li class="list__search-list__choice"> <a href="#ha">ハ</a></li>
+            <li class="list__search-list__choice"> <a href="#ma">マ</a></li>
+            <li class="list__search-list__choice"> <a href="#ya">ヤ</a></li>
+            <li class="list__search-list__choice"> <a href="#ra">ラ</a></li>
         </ul>
-        <ul class="star__list">
-            <li class="star__search__choice smartphone">ア</li>
-            <li id="a"><button data-target="arnold">アーノルド・シュワルツェネッガー</button></li>
-            <li><button data-target="star_w">R2-D2</button></li>
-            <li><button data-target="irene">アイリーン・ダン</button></li>
-            <li><button data-target="adam">アダム・サンドラー</button></li>
-            <li><button data-target="adolph">アドルフ・ズーカー</button></li>
-            <li><button data-target="mcu">アベンジャーズ</button></li>
-            <li><button data-target="alan">アラン・ラッド</button></li>
-            <li><button data-target="ali">アリ・マッグロー</button></li>
-            <li><button data-target="alice">アリス・フェイ</button></li>
-            <li><button data-target="al_j">アル・ジョルソン</button></li>
-            <li><button data-target="al_p">アル・パチーノ</button></li>
-            <li><button data-target="ahn">アン・ソンギ</button></li>
-            <li><button data-target="ann">アン・ハーディング</button></li>
-            <li><button data-target="anne">アン・バクスター</button></li>
-            <li><button data-target="anthony_q">アンソニー・クイン</button></li>
-            <li><button data-target="anthony_h">アンソニー・ホプキンス</button></li>
-            <li><button data-target="anthony_r">アンソニー・ルッソ</button></li>
-            <li><button data-target="lee">イ・ビョンホン</button></li>
-            <li><button data-target="van_j">ヴァン・ジョンソン</button></li>
-            <li><button data-target="van_d">W・S・ヴァン・ダイク</button></li>
-            <li><button data-target="van_h">ヴァン・ヘフリン</button></li>
-            <li><button data-target="william_s_h">ウィリアム・S・ハート</button></li>
-            <li><button data-target="star_t">ウィリアム・シャトナー</button></li>
-            <li><button data-target="william_p">ウィリアム・パウエル</button></li>
-            <li><button data-target="william_l">ウィリアム・ランディガン</button></li>
-            <li><button data-target="will">ウィル・スミス</button></li>
-            <li><button data-target="whoopi">ウーピー・ゴールドバーグ</button></li>
-            <li><button data-target="west">ウエストサイドストーリー</button></li>
-            <li><button data-target="warren">ウォーレン・ベイティ</button></li>
-            <li><button data-target="star_t">ウォルター・ケーニッヒ</button></li>
-            <li><button data-target="walter_m">ウォルター・マッソー</button></li>
-            <li><button data-target="wallace">ウォレス・ビアリー</button></li>
-            <li><button data-target="ava">エヴァ・ガードナー</button></li>
-            <li><button data-target="esther">エスター・ウィリアムズ</button></li>
-            <li><button data-target="ezio">エツィオ・ピンツァ</button></li>
-            <li><button data-target="eddie_c">エディ・カンター</button></li>
-            <li><button data-target="eddie_m">エディ・マーフィ</button></li>
-            <li><button data-target="edgar__charlie">エドガー・バーゲン</button></li>
-            <li><button data-target="edward_g">エドワード・G・ロビンソン</button></li>
-            <li><button data-target="edward_a">エドワード・アーノルド</button></li>
-            <li><button data-target="lalaland">エマ・ストーン</button></li>
-            <li><button data-target="emma">エマ・トンプソン</button></li>
-            <li><button data-target="harry">エマ・ワトソン</button></li>
-            <li><button data-target="mgm">MGM レオ</button></li>
-            <li><button data-target="elizabeth">エリザベス・テイラー</button></li>
-            <li><button data-target="elmer">エルマー・C・ローデン</button></li>
-            <li><button data-target="eleanor">エレノア・パウエル</button></li>
-            <li><button data-target="oskar">オスカー・ヴェルナー</button></li>
-            <li><button data-target="olivia">オリヴィア・デ・ハビランド</button></li>
-            <li class="star__search__choice smartphone">カ</li>
-            <li id="ka"><button data-target="kirk">カーク・ダグラス</button></li>
-            <li><button data-target="carmen">カルメン・ミランダ</button></li>
-            <li><button data-target="cantinflas">カンティンフラス</button></li>
-            <li><button data-target="carol">キャロル・バーネット</button></li>
-            <li><button data-target="clark">クラーク・ゲーブル</button></li>
-            <li><button data-target="greer">グリア・ガーソン</button></li>
-            <li><button data-target="mcu">クリス・エヴァンス</button></li>
-            <li><button data-target="mcu">クリス・ヘムズワース</button></li>
-            <li><button data-target="twilight">クリステン・スチュワート</button></li>
-            <li><button data-target="clifton">クリフトン・ウェッブ</button></li>
-            <li><button data-target="clint">クリント・イーストウッド</button></li>
-            <li><button data-target="gregory">グレゴリー・ペック</button></li>
-            <li><button data-target="gloria">グロリア・スワンソン</button></li>
-            <li><button data-target="gary">ゲイリー・クーパー</button></li>
-            <li><button data-target="cary">ケーリー・グラント</button></li>
-            <li><button data-target="kevin">ケビン・コスナー</button></li>
-            <li><button data-target="mcu">ケビン・ファイギ</button></li>
-            <li><button data-target="kobe">コービー・ブライアント</button></li>
-            <li><button data-target="colleen">コリーン・ムーア</button></li>
-            <li><button data-target="constance">コンスタンス・タルマジ</button></li>
-            <li class="star__search__choice smartphone">サ</li>
-            <li id="sa"><button data-target="samuel">サミュエル・L・ジャクソン</button></li>
-            <li><button data-target="star_w">C-3PO</button></li>
-            <li><button data-target="gene_a">ジーン・オートリー</button></li>
-            <li><button data-target="jeanne">ジーン・クレイン</button></li>
-            <li><button data-target="gene_k">ジーン・ケリー</button></li>
-            <li><button data-target="jean_s">ジーン・シモンズ</button></li>
-            <li><button data-target="gene_t">ジーン・ティアニー</button></li>
-            <li><button data-target="jean_he">ジーン・ハーショルト</button></li>
-            <li><button data-target="jean_ha">ジーン・ハーロウ</button></li>
-            <li><button data-target="star_t">ジーン・ロッデンベリー</button></li>
-            <li><button data-target="james_s">ジェームズ・スチュワート</button></li>
-            <li><button data-target="star_t">ジェームズ・ドゥーハン</button></li>
-            <li><button data-target="james_m">ジェームズ・メイソン</button></li>
-            <li><button data-target="jane_wi">ジェーン・ウィザーズ</button></li>
-            <li><button data-target="jane_r">ジェーン・ラッセル</button></li>
-            <li><button data-target="jane_wy">ジェーン・ワイマン</button></li>
-            <li><button data-target="jennifer">ジェニファー・アニストン</button></li>
-            <li><button data-target="hunger">ジェニファー・ローレンス</button></li>
-            <li><button data-target="jeff">ジェフ・ブリッジス</button></li>
-            <li><button data-target="mcu">ジェレミー・レナー</button></li>
-            <li><button data-target="sid">シド・グローマン</button></li>
-            <li><button data-target="sidney">シドニー・ポワチエ</button></li>
-            <li><button data-target="jimmy">ジミー・デュランテ</button></li>
-            <li><button data-target="jim">ジム・キャリー</button></li>
-            <li><button data-target="shirley_t">シャーリー・テンプル</button></li>
-            <li><button data-target="shirley_m">シャーリー・マクレーン</button></li>
-            <li><button data-target="jackie">ジャッキー・クーパー</button></li>
-            <li><button data-target="jack_o">ジャック・オーキー</button></li>
-            <li><button data-target="jack_n">ジャック・ニコルソン</button></li>
-            <li><button data-target="jack_b">ジャック・ベニー</button></li>
-            <li><button data-target="jack_l">ジャック・レモン</button></li>
-            <li><button data-target="janet">ジャネット・ゲイナー</button></li>
-            <li><button data-target="jeanette">ジャネット・マクドナルド</button></li>
-            <li><button data-target="judy">ジュディ・ガーランド</button></li>
-            <li><button data-target="julie">ジュリー・アンドリュース</button></li>
-            <li><button data-target="paul__joanne">ジョアン・ウッドワード</button></li>
-            <li><button data-target="joe_e">ジョー・E・ブラウン</button></li>
-            <li><button data-target="joe_r">ジョー・ルッソ</button></li>
-            <li><button data-target="george_j">ジョージ・ジェッセル</button></li>
-            <li><button data-target="george_s">ジョージ・スティーブンス</button></li>
-            <li><button data-target="star_t">ジョージ・タケイ</button></li>
-            <li><button data-target="west">ジョージ・チャキリス</button></li>
-            <li><button data-target="george_b">ジョージ・バーンズ</button></li>
-            <li><button data-target="george_m">ジョージ・マーフィー</button></li>
-            <li><button data-target="george_r">ジョージ・ラフト</button></li>
-            <li><button data-target="indiana">ジョージ・ルーカス</button></li>
-            <li><button data-target="joan_c">ジョーン・クロフォード</button></li>
-            <li><button data-target="sean">ショーン・コネリー</button></li>
-            <li><button data-target="joan_f">ジョーン・フォンテイン</button></li>
-            <li><button data-target="joan_b">ジョーン・ブロンデル</button></li>
-            <li><button data-target="hunger">ジョシュ・ハッチャーソン</button></li>
-            <li><button data-target="johnny_g">ジョニー・グラント</button></li>
-            <li><button data-target="johnny_d">ジョニー・デップ</button></li>
-            <li><button data-target="john_w">ジョン・ウェイン</button></li>
-            <li><button data-target="john_t">ジョン・トラボルタ</button></li>
-            <li><button data-target="john_b">ジョン・バリモア</button></li>
-            <li><button data-target="sylvester">シルヴェスター・スタローン</button></li>
-            <li><button data-target="ginger">ジンジャー・ロジャース</button></li>
-            <li><button data-target="susan_s">スーザン・サランドン</button></li>
-            <li><button data-target="susan_h">スーザン・ヘイワード</button></li>
-            <li><button data-target="mcu">スカーレット・ヨハンソン</button></li>
-            <li><button data-target="star_w">スターウォーズ</button></li>
-            <li><button data-target="star_t">スタートレック</button></li>
-            <li><button data-target="stan">スタン・リー</button></li>
-            <li><button data-target="steve">スティーブ・マックイーン</button></li>
-            <li><button data-target="indiana">スティーブン・スピルバーグ</button></li>
-            <li><button data-target="steven_se">スティーブン・セガール</button></li>
-            <li><button data-target="cecil">セシル・B・デミル</button></li>
-            <li><button data-target="sonja">ソニア・ヘニー</button></li>
-            <li><button data-target="sophia">ソフィア・ローレン</button></li>
-            <li class="star__search__choice smartphone">タ</li>
-            <li id="ta"><button data-target="star_w">ダース・ベイダー</button></li>
-            <li><button data-target="diana">ダイアナ・ウィンヤード</button></li>
-            <li><button data-target="tyrone">タイロン・パワー</button></li>
-            <li><button data-target="douglas">ダグラス・フェアバンクス</button></li>
-            <li><button data-target="danny_g">ダニー・グローバー</button></li>
-            <li><button data-target="danny_k">ダニー・ケイ</button></li>
-            <li><button data-target="danny_t">ダニー・トーマス</button></li>
-            <li><button data-target="harry">ダニエル・ラドクリフ</button></li>
-            <li><button data-target="edgar__charlie">チャーリー・マッカーシー</button></li>
-            <li><button data-target="charles_n">チャールズ・ネルソン</button></li>
-            <li><button data-target="charles_b">チャールズ・ボイヤー</button></li>
-            <li><button data-target="charles_l">チャールズ・ロートン</button></li>
-            <li><button data-target="charlton">チャールトン・ヘストン</button></li>
-            <li><button data-target="deanna">ディアナ・ダービン</button></li>
-            <li><button data-target="dean">ディーン・マーティン</button></li>
-            <li><button data-target="dick_v">ディック・ヴァン・ダイク</button></li>
-            <li><button data-target="dick_p">ディック・パウエル</button></li>
-            <li><button data-target="twilight">テイラー・ロートナー</button></li>
-            <li><button data-target="ted">テッド・マン</button></li>
-            <li><button data-target="debbie">デビー・レイノルズ</button></li>
-            <li><button data-target="star_t">デフォレスト・ケリー</button></li>
-            <li><button data-target="deborah">デボラ・カー</button></li>
-            <li><button data-target="denzel">デンゼル・ワシントン</button></li>
-            <li><button data-target="donald_o">ドナルド・オコナー</button></li>
-            <li><button data-target="donald_d">ドナルドダック</button></li>
-            <li><button data-target="tony_t">トニー・ザ・ワンダー・ホース</button></li>
-            <li><button data-target="tony_m">トニー・マーティン</button></li>
-            <li><button data-target="tom_c">トム・クルーズ</button></li>
-            <li><button data-target="tom_h">トム・ハンクス</button></li>
-            <li><button data-target="tom_m">トム・ミックス</button></li>
-            <li><button data-target="trigger">トリガー</button></li>
-            <li><button data-target="doris">ドリス・デイ</button></li>
-            <li><button data-target="dorothy">ドロシー・ラムーア</button></li>
-            <li><button data-target="twilight">トワイライト・サーガ</button></li>
-            <li><button data-target="don">ドン・アメチー</button></li>
-            <li class="star__search__choice smartphone">ナ</li>
-            <li id="na"><button data-target="natalie">ナタリー・ウッド</button></li>
-            <li><button data-target="nicolas">ニコラス・ケイジ</button></li>
-            <li><button data-target="star_t">ニシェル・ニコルズ</button></li>
-            <li><button data-target="nelson">ネルソン・エディ</button></li>
-            <li><button data-target="norma_s">ノーマ・シアラー</button></li>
-            <li><button data-target="norma_t">ノーマ・タルマジ</button></li>
-            <li class="star__search__choice smartphone">ハ</li>
-            <li id="ha"><button data-target="burt">バート・レイノルズ</button></li>
-            <li><button data-target="robert__barbara">バーバラ・スタンウィック</button></li>
-            <li><button data-target="abbott__costello">バド・アボット</button></li>
-            <li><button data-target="harry">ハリー・ポッター</button></li>
-            <li><button data-target="hollywood">ハリウッド100周年</button></li>
-            <li><button data-target="harrison">ハリソン・フォード</button></li>
-            <li><button data-target="harold">ハロルド・ロイド</button></li>
-            <li><button data-target="hunger">ハンガーゲーム</button></li>
-            <li><button data-target="humphrey">ハンフリー・ボガート</button></li>
-            <li><button data-target="peter">ピーター・セラーズ</button></li>
-            <li><button data-target="victor">ビクター・マクラグレン</button></li>
-            <li><button data-target="hugh">ヒュー・ジャックマン</button></li>
-            <li><button data-target="hildegarde">ヒルデガルド・クネフ</button></li>
-            <li><button data-target="bing">ビング・クロスビー</button></li>
-            <li><button data-target="brad">ブラッド・ピット</button></li>
-            <li><button data-target="frank">フランク・シナトラ</button></li>
-            <li><button data-target="bruce">ブルース・ウィリス</button></li>
-            <li><button data-target="fred">フレッド・アステア</button></li>
-            <li><button data-target="freddie">フレディ・バーソロミュー</button></li>
-            <li><button data-target="fredric">フレドリック・マーチ</button></li>
-            <li><button data-target="hayley">ヘイリー・ミルズ</button></li>
-            <li><button data-target="betty">ベティ・グレイブル</button></li>
-            <li><button data-target="bette">ベティ・デイビス</button></li>
-            <li><button data-target="bebe">ベベ・ダニエルズ</button></li>
-            <li><button data-target="ben">ベン・スティラー</button></li>
-            <li><button data-target="henry">ヘンリー・フォンダ</button></li>
-            <li><button data-target="pola">ポーラ・ネグリ</button></li>
-            <li><button data-target="paul__joanne">ポール・ニューマン</button></li>
-            <li><button data-target="bob">ボブ・ホープ</button></li>
-            <li class="star__search__choice smartphone">マ</li>
-            <li id="ma"><button data-target="mervyn">マーヴィン・ルロイ</button></li>
-            <li><button data-target="margaret">マーガレット・オブライエン</button></li>
-            <li><button data-target="mcu">マーク・ラファロ</button></li>
-            <li><button data-target="myrna">マーナ・ロイ</button></li>
-            <li><button data-target="michael_k">マイケル・キートン</button></li>
-            <li><button data-target="michael_j">マイケル・ジャクソン</button></li>
-            <li><button data-target="michael_d">マイケル・ダグラス</button></li>
-            <li><button data-target="matt">マット・デイモン</button></li>
-            <li><button data-target="marie">マリー・ドレスラー</button></li>
-            <li><button data-target="marion">マリオン・デイヴィス</button></li>
-            <li><button data-target="marilyn">マリリン・モンロー</button></li>
-            <li><button data-target="marx">マルクス兄弟</button></li>
-            <li><button data-target="marcello">マルチェロ・マストロヤンニ</button></li>
-            <li><button data-target="mickey">ミッキー・ルーニー</button></li>
-            <li><button data-target="miniver">ミニバー夫人</button></li>
-            <li><button data-target="mary">メアリー・ピックフォード</button></li>
-            <li><button data-target="may">メイ・ロブソン</button></li>
-            <li><button data-target="meryl">メリル・ストリープ</button></li>
-            <li><button data-target="mel">メル・ギブソン</button></li>
-            <li><button data-target="morgan">モーガン・フリーマン</button></li>
-            <li><button data-target="maurice">モーリス・シュヴァリエ</button></li>
-            <li><button data-target="monty">モンティ・ウーリー</button></li>
-            <li class="star__search__choice smartphone">ヤ</li>
-            <li id="ya"><button data-target="yul">ユル・ブリンナー</button></li>
-            <li><button data-target="yoshiki">ヨシキ</button></li>
-            <li class="star__search__choice smartphone">ラ</li>
-            <li id="ra"><button data-target="lalaland">ラ・ラ・ランド</button></li>
-            <li><button data-target="lalaland">ライアン・ゴズリング</button></li>
-            <li><button data-target="lauritz">ラウリッツ・メルヒオール</button></li>
-            <li><button data-target="raoul">ラウル・ウォルシュ</button></li>
-            <li><button data-target="west">ラス・タンブリン</button></li>
-            <li><button data-target="lana">ラナ・ターナー</button></li>
-            <li><button data-target="hunger">リアム・ヘムズワース</button></li>
-            <li><button data-target="rita">リタ・ヘイワース</button></li>
-            <li><button data-target="west">リタ・モレノ</button></li>
-            <li><button data-target="richard_w">リチャード・ウィドマーク</button></li>
-            <li><button data-target="richard_g">リチャード・ギア</button></li>
-            <li><button data-target="ritz">リッツ兄弟</button></li>
-            <li><button data-target="linda">リンダ・ダーネル</button></li>
-            <li><button data-target="abbott__costello">ルー・コステロ</button></li>
-            <li><button data-target="louella">ルエラ・パーソンズ</button></li>
-            <li><button data-target="rudy">ルディ・ヴァレー</button></li>
-            <li><button data-target="harry">ルパート・グリント</button></li>
-            <li><button data-target="ray">レイ・ミランド</button></li>
-            <li><button data-target="rex">レックス・ハリソン</button></li>
-            <li><button data-target="red">レッド・スケルトン</button></li>
-            <li><button data-target="star_t">レナード・ニモイ</button></li>
-            <li><button data-target="roy">ロイ・ロジャース</button></li>
-            <li><button data-target="rosa">ローザ・グローマン</button></li>
-            <li><button data-target="rosalind">ロザリンド・ラッセル</button></li>
-            <li><button data-target="rock">ロック・ハドソン</button></li>
-            <li><button data-target="robert_z">ロバート・ゼメキス</button></li>
-            <li><button data-target="mcu">ロバート・ダウニー・ジュニア</button></li>
-            <li><button data-target="robert_d">ロバート・デ・ニーロ</button></li>
-            <li><button data-target="robert__barbara">ロバート・テイラー</button></li>
-            <li><button data-target="twilight">ロバート・パティンソン</button></li>
-            <li><button data-target="robin">ロビン・ウィリアムズ</button></li>
-            <li><button data-target="loretta">ロレッタ・ヤング</button></li>
-            <li><button data-target="ron">ロン・ハワード</button></li>
-            <li><button data-target="rhonda">ロンダ・フレミング</button></li>
-        </ul>
+        <div class="list__name-list">
+            <ul>
+                <li id="a"><button data-target="arnold">アーノルド・シュワルツェネッガー</button></li>
+                <li><button data-target="star_w">R2-D2</button></li>
+                <li><button data-target="irene">アイリーン・ダン</button></li>
+                <li><button data-target="adam">アダム・サンドラー</button></li>
+                <li><button data-target="adolph">アドルフ・ズーカー</button></li>
+                <li><button data-target="mcu">アベンジャーズ</button></li>
+                <li><button data-target="alan">アラン・ラッド</button></li>
+                <li><button data-target="ali">アリ・マッグロー</button></li>
+                <li><button data-target="alice">アリス・フェイ</button></li>
+                <li><button data-target="al_j">アル・ジョルソン</button></li>
+                <li><button data-target="al_p">アル・パチーノ</button></li>
+                <li><button data-target="ahn">アン・ソンギ</button></li>
+                <li><button data-target="ann">アン・ハーディング</button></li>
+                <li><button data-target="anne">アン・バクスター</button></li>
+                <li><button data-target="anthony_q">アンソニー・クイン</button></li>
+                <li><button data-target="anthony_h">アンソニー・ホプキンス</button></li>
+                <li><button data-target="anthony_r">アンソニー・ルッソ</button></li>
+                <li><button data-target="lee">イ・ビョンホン</button></li>
+                <li><button data-target="van_j">ヴァン・ジョンソン</button></li>
+                <li><button data-target="van_d">W・S・ヴァン・ダイク</button></li>
+                <li><button data-target="van_h">ヴァン・ヘフリン</button></li>
+                <li><button data-target="william_s_h">ウィリアム・S・ハート</button></li>
+                <li><button data-target="star_t">ウィリアム・シャトナー</button></li>
+                <li><button data-target="william_p">ウィリアム・パウエル</button></li>
+                <li><button data-target="william_l">ウィリアム・ランディガン</button></li>
+                <li><button data-target="will">ウィル・スミス</button></li>
+                <li><button data-target="whoopi">ウーピー・ゴールドバーグ</button></li>
+                <li><button data-target="west">ウエストサイドストーリー</button></li>
+                <li><button data-target="warren">ウォーレン・ベイティ</button></li>
+                <li><button data-target="star_t">ウォルター・ケーニッヒ</button></li>
+                <li><button data-target="walter_m">ウォルター・マッソー</button></li>
+                <li><button data-target="wallace">ウォレス・ビアリー</button></li>
+                <li><button data-target="ava">エヴァ・ガードナー</button></li>
+                <li><button data-target="esther">エスター・ウィリアムズ</button></li>
+                <li><button data-target="ezio">エツィオ・ピンツァ</button></li>
+                <li><button data-target="eddie_c">エディ・カンター</button></li>
+                <li><button data-target="eddie_m">エディ・マーフィ</button></li>
+                <li><button data-target="edgar__charlie">エドガー・バーゲン</button></li>
+                <li><button data-target="edward_g">エドワード・G・ロビンソン</button></li>
+                <li><button data-target="edward_a">エドワード・アーノルド</button></li>
+                <li><button data-target="lalaland">エマ・ストーン</button></li>
+                <li><button data-target="emma">エマ・トンプソン</button></li>
+                <li><button data-target="harry">エマ・ワトソン</button></li>
+                <li><button data-target="mgm">MGM レオ</button></li>
+                <li><button data-target="elizabeth">エリザベス・テイラー</button></li>
+                <li><button data-target="elmer">エルマー・C・ローデン</button></li>
+                <li><button data-target="eleanor">エレノア・パウエル</button></li>
+                <li><button data-target="oskar">オスカー・ヴェルナー</button></li>
+                <li><button data-target="olivia">オリヴィア・デ・ハビランド</button></li>
+                <li id="ka"><button data-target="kirk">カーク・ダグラス</button></li>
+                <li><button data-target="carmen">カルメン・ミランダ</button></li>
+                <li><button data-target="cantinflas">カンティンフラス</button></li>
+                <li><button data-target="carol">キャロル・バーネット</button></li>
+                <li><button data-target="clark">クラーク・ゲーブル</button></li>
+                <li><button data-target="greer">グリア・ガーソン</button></li>
+                <li><button data-target="mcu">クリス・エヴァンス</button></li>
+                <li><button data-target="mcu">クリス・ヘムズワース</button></li>
+                <li><button data-target="twilight">クリステン・スチュワート</button></li>
+                <li><button data-target="clifton">クリフトン・ウェッブ</button></li>
+                <li><button data-target="clint">クリント・イーストウッド</button></li>
+                <li><button data-target="gregory">グレゴリー・ペック</button></li>
+                <li><button data-target="gloria">グロリア・スワンソン</button></li>
+                <li><button data-target="gary">ゲイリー・クーパー</button></li>
+                <li><button data-target="cary">ケーリー・グラント</button></li>
+                <li><button data-target="kevin">ケビン・コスナー</button></li>
+                <li><button data-target="mcu">ケビン・ファイギ</button></li>
+                <li><button data-target="kobe">コービー・ブライアント</button></li>
+                <li><button data-target="colleen">コリーン・ムーア</button></li>
+                <li><button data-target="constance">コンスタンス・タルマジ</button></li>
+                <li id="sa"><button data-target="samuel">サミュエル・L・ジャクソン</button></li>
+                <li><button data-target="star_w">C-3PO</button></li>
+                <li><button data-target="gene_a">ジーン・オートリー</button></li>
+                <li><button data-target="jeanne">ジーン・クレイン</button></li>
+                <li><button data-target="gene_k">ジーン・ケリー</button></li>
+                <li><button data-target="jean_s">ジーン・シモンズ</button></li>
+                <li><button data-target="gene_t">ジーン・ティアニー</button></li>
+                <li><button data-target="jean_he">ジーン・ハーショルト</button></li>
+                <li><button data-target="jean_ha">ジーン・ハーロウ</button></li>
+                <li><button data-target="star_t">ジーン・ロッデンベリー</button></li>
+                <li><button data-target="james_s">ジェームズ・スチュワート</button></li>
+                <li><button data-target="star_t">ジェームズ・ドゥーハン</button></li>
+                <li><button data-target="james_m">ジェームズ・メイソン</button></li>
+                <li><button data-target="jane_wi">ジェーン・ウィザーズ</button></li>
+                <li><button data-target="jane_r">ジェーン・ラッセル</button></li>
+                <li><button data-target="jane_wy">ジェーン・ワイマン</button></li>
+                <li><button data-target="jennifer">ジェニファー・アニストン</button></li>
+                <li><button data-target="hunger">ジェニファー・ローレンス</button></li>
+                <li><button data-target="jeff">ジェフ・ブリッジス</button></li>
+                <li><button data-target="mcu">ジェレミー・レナー</button></li>
+            </ul>
+            <span class="list__name-list__line desktop-only"></span>
+            <ul>
+                <li><button data-target="sid">シド・グローマン</button></li>
+                <li><button data-target="sidney">シドニー・ポワチエ</button></li>
+                <li><button data-target="jimmy">ジミー・デュランテ</button></li>
+                <li><button data-target="jim">ジム・キャリー</button></li>
+                <li><button data-target="shirley_t">シャーリー・テンプル</button></li>
+                <li><button data-target="shirley_m">シャーリー・マクレーン</button></li>
+                <li><button data-target="jackie">ジャッキー・クーパー</button></li>
+                <li><button data-target="jack_o">ジャック・オーキー</button></li>
+                <li><button data-target="jack_n">ジャック・ニコルソン</button></li>
+                <li><button data-target="jack_b">ジャック・ベニー</button></li>
+                <li><button data-target="jack_l">ジャック・レモン</button></li>
+                <li><button data-target="janet">ジャネット・ゲイナー</button></li>
+                <li><button data-target="jeanette">ジャネット・マクドナルド</button></li>
+                <li><button data-target="judy">ジュディ・ガーランド</button></li>
+                <li><button data-target="julie">ジュリー・アンドリュース</button></li>
+                <li><button data-target="paul__joanne">ジョアン・ウッドワード</button></li>
+                <li><button data-target="joe_e">ジョー・E・ブラウン</button></li>
+                <li><button data-target="joe_r">ジョー・ルッソ</button></li>
+                <li><button data-target="george_j">ジョージ・ジェッセル</button></li>
+                <li><button data-target="george_s">ジョージ・スティーブンス</button></li>
+                <li><button data-target="star_t">ジョージ・タケイ</button></li>
+                <li><button data-target="west">ジョージ・チャキリス</button></li>
+                <li><button data-target="george_b">ジョージ・バーンズ</button></li>
+                <li><button data-target="george_m">ジョージ・マーフィー</button></li>
+                <li><button data-target="george_r">ジョージ・ラフト</button></li>
+                <li><button data-target="indiana">ジョージ・ルーカス</button></li>
+                <li><button data-target="joan_c">ジョーン・クロフォード</button></li>
+                <li><button data-target="sean">ショーン・コネリー</button></li>
+                <li><button data-target="joan_f">ジョーン・フォンテイン</button></li>
+                <li><button data-target="joan_b">ジョーン・ブロンデル</button></li>
+                <li><button data-target="hunger">ジョシュ・ハッチャーソン</button></li>
+                <li><button data-target="johnny_g">ジョニー・グラント</button></li>
+                <li><button data-target="johnny_d">ジョニー・デップ</button></li>
+                <li><button data-target="john_w">ジョン・ウェイン</button></li>
+                <li><button data-target="john_t">ジョン・トラボルタ</button></li>
+                <li><button data-target="john_b">ジョン・バリモア</button></li>
+                <li><button data-target="sylvester">シルヴェスター・スタローン</button></li>
+                <li><button data-target="ginger">ジンジャー・ロジャース</button></li>
+                <li><button data-target="susan_s">スーザン・サランドン</button></li>
+                <li><button data-target="susan_h">スーザン・ヘイワード</button></li>
+                <li><button data-target="mcu">スカーレット・ヨハンソン</button></li>
+                <li><button data-target="star_w">スターウォーズ</button></li>
+                <li><button data-target="star_t">スタートレック</button></li>
+                <li><button data-target="stan">スタン・リー</button></li>
+                <li><button data-target="steve">スティーブ・マックイーン</button></li>
+                <li><button data-target="indiana">スティーブン・スピルバーグ</button></li>
+                <li><button data-target="steven_se">スティーブン・セガール</button></li>
+                <li><button data-target="cecil">セシル・B・デミル</button></li>
+                <li><button data-target="sonja">ソニア・ヘニー</button></li>
+                <li><button data-target="sophia">ソフィア・ローレン</button></li>
+                <li id="ta"><button data-target="star_w">ダース・ベイダー</button></li>
+                <li><button data-target="diana">ダイアナ・ウィンヤード</button></li>
+                <li><button data-target="tyrone">タイロン・パワー</button></li>
+                <li><button data-target="douglas">ダグラス・フェアバンクス</button></li>
+                <li><button data-target="danny_g">ダニー・グローバー</button></li>
+                <li><button data-target="danny_k">ダニー・ケイ</button></li>
+                <li><button data-target="danny_t">ダニー・トーマス</button></li>
+                <li><button data-target="harry">ダニエル・ラドクリフ</button></li>
+                <li><button data-target="edgar__charlie">チャーリー・マッカーシー</button></li>
+                <li><button data-target="charles_n">チャールズ・ネルソン</button></li>
+                <li><button data-target="charles_b">チャールズ・ボイヤー</button></li>
+                <li><button data-target="charles_l">チャールズ・ロートン</button></li>
+                <li><button data-target="charlton">チャールトン・ヘストン</button></li>
+                <li><button data-target="deanna">ディアナ・ダービン</button></li>
+                <li><button data-target="dean">ディーン・マーティン</button></li>
+                <li><button data-target="dick_v">ディック・ヴァン・ダイク</button></li>
+                <li><button data-target="dick_p">ディック・パウエル</button></li>
+                <li><button data-target="twilight">テイラー・ロートナー</button></li>
+                <li><button data-target="ted">テッド・マン</button></li>
+                <li><button data-target="debbie">デビー・レイノルズ</button></li>
+                <li><button data-target="star_t">デフォレスト・ケリー</button></li>
+                <li><button data-target="deborah">デボラ・カー</button></li>
+                <li><button data-target="denzel">デンゼル・ワシントン</button></li>
+                <li><button data-target="donald_o">ドナルド・オコナー</button></li>
+                <li><button data-target="donald_d">ドナルドダック</button></li>
+                <li><button data-target="tony_t">トニー・ザ・ワンダー・ホース</button></li>
+                <li><button data-target="tony_m">トニー・マーティン</button></li>
+                <li><button data-target="tom_c">トム・クルーズ</button></li>
+                <li><button data-target="tom_h">トム・ハンクス</button></li>
+                <li><button data-target="tom_m">トム・ミックス</button></li>
+                <li><button data-target="trigger">トリガー</button></li>
+                <li><button data-target="doris">ドリス・デイ</button></li>
+                <li><button data-target="dorothy">ドロシー・ラムーア</button></li>
+                <li><button data-target="twilight">トワイライト・サーガ</button></li>
+                <li><button data-target="don">ドン・アメチー</button></li>
+                <li id="na"><button data-target="natalie">ナタリー・ウッド</button></li>
+                <li><button data-target="nicolas">ニコラス・ケイジ</button></li>
+                <li><button data-target="star_t">ニシェル・ニコルズ</button></li>
+                <li><button data-target="nelson">ネルソン・エディ</button></li>
+            </ul>
+            <span class="list__name-list__line desktop-only"></span>
+            <ul>
+                <li><button data-target="norma_s">ノーマ・シアラー</button></li>
+                <li><button data-target="norma_t">ノーマ・タルマジ</button></li>
+                <li id="ha"><button data-target="burt">バート・レイノルズ</button></li>
+                <li><button data-target="robert__barbara">バーバラ・スタンウィック</button></li>
+                <li><button data-target="abbott__costello">バド・アボット</button></li>
+                <li><button data-target="harry">ハリー・ポッター</button></li>
+                <li><button data-target="hollywood">ハリウッド100周年</button></li>
+                <li><button data-target="harrison">ハリソン・フォード</button></li>
+                <li><button data-target="harold">ハロルド・ロイド</button></li>
+                <li><button data-target="hunger">ハンガーゲーム</button></li>
+                <li><button data-target="humphrey">ハンフリー・ボガート</button></li>
+                <li><button data-target="peter">ピーター・セラーズ</button></li>
+                <li><button data-target="victor">ビクター・マクラグレン</button></li>
+                <li><button data-target="hugh">ヒュー・ジャックマン</button></li>
+                <li><button data-target="hildegarde">ヒルデガルド・クネフ</button></li>
+                <li><button data-target="bing">ビング・クロスビー</button></li>
+                <li><button data-target="brad">ブラッド・ピット</button></li>
+                <li><button data-target="frank">フランク・シナトラ</button></li>
+                <li><button data-target="bruce">ブルース・ウィリス</button></li>
+                <li><button data-target="fred">フレッド・アステア</button></li>
+                <li><button data-target="freddie">フレディ・バーソロミュー</button></li>
+                <li><button data-target="fredric">フレドリック・マーチ</button></li>
+                <li><button data-target="hayley">ヘイリー・ミルズ</button></li>
+                <li><button data-target="betty">ベティ・グレイブル</button></li>
+                <li><button data-target="bette">ベティ・デイビス</button></li>
+                <li><button data-target="bebe">ベベ・ダニエルズ</button></li>
+                <li><button data-target="ben">ベン・スティラー</button></li>
+                <li><button data-target="henry">ヘンリー・フォンダ</button></li>
+                <li><button data-target="pola">ポーラ・ネグリ</button></li>
+                <li><button data-target="paul__joanne">ポール・ニューマン</button></li>
+                <li><button data-target="bob">ボブ・ホープ</button></li>
+                <li id="ma"><button data-target="mervyn">マーヴィン・ルロイ</button></li>
+                <li><button data-target="margaret">マーガレット・オブライエン</button></li>
+                <li><button data-target="mcu">マーク・ラファロ</button></li>
+                <li><button data-target="myrna">マーナ・ロイ</button></li>
+                <li><button data-target="michael_k">マイケル・キートン</button></li>
+                <li><button data-target="michael_j">マイケル・ジャクソン</button></li>
+                <li><button data-target="michael_d">マイケル・ダグラス</button></li>
+                <li><button data-target="matt">マット・デイモン</button></li>
+                <li><button data-target="marie">マリー・ドレスラー</button></li>
+                <li><button data-target="marion">マリオン・デイヴィス</button></li>
+                <li><button data-target="marilyn">マリリン・モンロー</button></li>
+                <li><button data-target="marx">マルクス兄弟</button></li>
+                <li><button data-target="marcello">マルチェロ・マストロヤンニ</button></li>
+                <li><button data-target="mickey">ミッキー・ルーニー</button></li>
+                <li><button data-target="miniver">ミニバー夫人</button></li>
+                <li><button data-target="mary">メアリー・ピックフォード</button></li>
+                <li><button data-target="may">メイ・ロブソン</button></li>
+                <li><button data-target="meryl">メリル・ストリープ</button></li>
+                <li><button data-target="mel">メル・ギブソン</button></li>
+                <li><button data-target="morgan">モーガン・フリーマン</button></li>
+                <li><button data-target="maurice">モーリス・シュヴァリエ</button></li>
+                <li><button data-target="monty">モンティ・ウーリー</button></li>
+                <li id="ya"><button data-target="yul">ユル・ブリンナー</button></li>
+                <li><button data-target="yoshiki">ヨシキ</button></li>
+                <li id="ra"><button data-target="lalaland">ラ・ラ・ランド</button></li>
+                <li><button data-target="lalaland">ライアン・ゴズリング</button></li>
+                <li><button data-target="lauritz">ラウリッツ・メルヒオール</button></li>
+                <li><button data-target="raoul">ラウル・ウォルシュ</button></li>
+                <li><button data-target="west">ラス・タンブリン</button></li>
+                <li><button data-target="lana">ラナ・ターナー</button></li>
+                <li><button data-target="hunger">リアム・ヘムズワース</button></li>
+                <li><button data-target="rita">リタ・ヘイワース</button></li>
+                <li><button data-target="west">リタ・モレノ</button></li>
+                <li><button data-target="richard_w">リチャード・ウィドマーク</button></li>
+                <li><button data-target="richard_g">リチャード・ギア</button></li>
+                <li><button data-target="ritz">リッツ兄弟</button></li>
+                <li><button data-target="linda">リンダ・ダーネル</button></li>
+                <li><button data-target="abbott__costello">ルー・コステロ</button></li>
+                <li><button data-target="louella">ルエラ・パーソンズ</button></li>
+                <li><button data-target="rudy">ルディ・ヴァレー</button></li>
+                <li><button data-target="harry">ルパート・グリント</button></li>
+                <li><button data-target="ray">レイ・ミランド</button></li>
+                <li><button data-target="rex">レックス・ハリソン</button></li>
+                <li><button data-target="red">レッド・スケルトン</button></li>
+                <li><button data-target="star_t">レナード・ニモイ</button></li>
+                <li><button data-target="roy">ロイ・ロジャース</button></li>
+                <li><button data-target="rosa">ローザ・グローマン</button></li>
+                <li><button data-target="rosalind">ロザリンド・ラッセル</button></li>
+                <li><button data-target="rock">ロック・ハドソン</button></li>
+                <li><button data-target="robert_z">ロバート・ゼメキス</button></li>
+                <li><button data-target="mcu">ロバート・ダウニー・ジュニア</button></li>
+                <li><button data-target="robert_d">ロバート・デ・ニーロ</button></li>
+                <li><button data-target="robert__barbara">ロバート・テイラー</button></li>
+                <li><button data-target="twilight">ロバート・パティンソン</button></li>
+                <li><button data-target="robin">ロビン・ウィリアムズ</button></li>
+                <li><button data-target="loretta">ロレッタ・ヤング</button></li>
+                <li><button data-target="ron">ロン・ハワード</button></li>
+                <li><button data-target="rhonda">ロンダ・フレミング</button></li>
+            </ul>
+        </div>
     </section>
 
     <footer>
         <div>
             <p>参照</p>
-            <ul class="footer-list">
+            <ul class="footer__list">
                 <li>
-                    <a class="footer-list__link"
+                    <a class="footer__list__link"
                         href="https://en.wikipedia.org/wiki/List_of_Grauman%27s_Chinese_Theatre_handprint_ceremonies">List
                         of Grauman's Chinese Theatre handprint ceremonies - Wikipedia</a>
                 </li>
                 <li>
-                    <a class="footer-list__link" href="https://www.seeing-stars.com/Maps/MannsForeCourtMap.shtml">Map of
+                    <a class="footer__list__link" href="https://www.seeing-stars.com/Maps/MannsForeCourtMap.shtml">Map
+                        of
                         the Footprint Forecourt
                         at Grauman's Chinese Theatre - seeing-stars.com</a>
                 </li>
                 <li>
-                    <a class="footer-list__link"
+                    <a class="footer__list__link"
                         href="https://classicblondes.com/2019/05/11/three-really-quick-tips-for-graumans-and-a-map/">Three
                         Really Quick Tips for Grauman's (and a map) - Classic Blondes - Classic Blondes</a>
                 </li>
