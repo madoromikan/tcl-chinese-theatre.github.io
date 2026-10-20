@@ -128,9 +128,9 @@ listItems.forEach((item) => {
     let offset;
 
     if (window.innerWidth <= 1023) {
-      offset = - 10;
+      offset = 90;
     } else {
-      offset = - 180;
+      offset = - 20;
     }
 
     const target = document.querySelector('#map');
@@ -141,7 +141,6 @@ listItems.forEach((item) => {
 
     window.scrollTo({
       top: position,
-      // behavior: 'smooth'
     });
 
   });
